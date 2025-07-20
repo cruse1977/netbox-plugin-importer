@@ -38,5 +38,9 @@ class CatalogObjectListView(View):
             'table': table,
         })
 
+class CatalogObjectInstallView(View):
+
+    def get(self, request):
+        return render(request, 'netbox_plugin_importer/catalog_install.html')
 
 
